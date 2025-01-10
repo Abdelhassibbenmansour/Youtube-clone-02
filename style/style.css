@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10rem;
+    margin: 5px 15px 15px;
+}
+
+header .left {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+header .left div:first-child {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+}
+
+header .left div:first-child:hover {
+    background-color: #ddd;
+}
+
+header .left div:last-child {
+    position: relative;
+    top: 5px;
+}
+
+header .left img {
+    width: 100px;
+    height: 30px;
+}
+
+header .right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+header .right .gauche {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+header .right .gauche .lisser {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+header .right .gauche .lisser input {
+    width: 600px;
+    height: 40px;
+    padding: 5px 25px;
+    border: 1px solid #eee;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+header .right .gauche .lisser input::placeholder {
+    color: black;
+}
+
+header .right .gauche .lisser input:focus {
+    border-color: #ddd;
+    outline-color: #ddd;
+}
+
+header .right .gauche .lisser div:last-of-type {
+    width: 60px;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #eee;
+    text-align: center;
+    align-content: center;
+}
+
+header .right .gauche .lisser div:last-of-type:hover {
+    background-color: #ddd;
+}
+
+header .right .gauche .limen {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+header .right .gauche .limen:hover {
+    background-color: #ddd;
+}
+
+header .right .droit {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+header .right .droit div:nth-child(1) {
+    background-color: #eee;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+header .right .droit div:nth-child(1):hover {
+    background-color: #ddd;
+}
+
+header .right .droit div:nth-child(2) {
+    background-color: #eee;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    padding: 0 10px;
+    border-radius: 50%;
+}
+
+header .right .droit div:nth-child(2):hover {
+    background-color: #ddd;
+}
+
+header .right .droit div:nth-child(3) {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+}
+
+section {
+    margin: 5px 15px 0;
+    display: flex;
+    flex-flow: row nowrap; 
+    margin-bottom: 20px;
+}
+
+section .left {
+    height: 100%;
+    min-width: 250px;
+    position: scroll;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+section .left i {
+    margin-right: 30px;
+}
+
+section .left .lewel,
+section .left .zawej ,
+section .left .talet, 
+section .left .tali, 
+section .left .line {
+    margin: 5px 15px;
+}
+
+section .left div:not(.line, .lewel, .zawej, .talet, .tali) {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    padding-left: 15px;
+    align-content: center;
+    transition: 0.3s;
+}
+
+section .left div:not(.line, .lewel, .zawej, .talet, .tali):hover {
+    background-color: #ddd;
+}
+section .left .line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+section .left .lewel div:first-child {
+    background-color: #ddd;
+}
+
+
+section .left .zawej span {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+section .left .talet div:nth-child(1) {
+    font-weight: bold;
+}
+
+section .left .talet div:nth-child(1):hover {
+    background-color: transparent;
+}
+
+section .left .talet a {
+    align-content: center;
+}
+
+section .left .talet a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+section .left .talet a span {
+    position: relative;
+    top: -8px;
+}
+
+section .left .tali div:nth-child(1) {
+    font-weight: bold;
+}
+
+section .left .tali div:nth-child(1):hover {
+    background-color: transparent;
+}
+
+
+section .right .top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; 
+    margin-left: 20px;
+    gap: 15px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+section .right .top div {
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+section .right .top  div:nth-child(1) {
+    background-color: black;
+} 
+
+section .right .top  div:nth-child(1) a {
+    color: white;
+}
+
+section .right .top  div:not(:nth-child(1)) {
+    color: black;
+    background-color: #eee;
+    transition: 0.3s;
+}
+
+section .right .top  div:not(:nth-child(1)):hover {
+    background-color: black;
+}
+
+section .right .top  div:not(:nth-child(1)):hover a {
+    color: white;
+}
+
+
+section .right .bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px;
+}
+
+section .right .bottom .next {
+    height: fit-content;
+    position: relative;
+}
+
+section .right .bottom .next::before {
+    content: attr(data-text);
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    padding: 2px;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 65%;
+    right: 3%;
+}
+
+section .right .bottom .next:nth-of-type(5)::before,
+section .right .bottom .next:nth-of-type(7)::before,
+section .right .bottom .next:nth-of-type(9)::before,
+section .right .bottom .next:nth-of-type(11)::before {
+    top: 60%;
+    right: 3%;
+}
+
+
+section .right .bottom .next > div {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+section .right .bottom .next img {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 200px;
+}
+
+section .right .bottom .next h4 {
+    font-weight: 500;
+}
+section .right .bottom .next span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: block;
+}   
+
+section .right .bottom .next p {
+    font-size: 0.8rem;
+}
+
+section .right .bottom .next p:first-of-type {
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+section .right .bottom .next {
+    border-top-left-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+section .right .bottom .next:hover {
+    border-top-left-radius: 0;
+    opacity: 0.5;
+}
+
+@media (max-width: 640px) {
+    header {
+        padding: 2rem 0;
+    }
+    header .left img {
+        width: 200px;
+    }
+    
+    section .right .bottom {
+        grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+    }
+}
