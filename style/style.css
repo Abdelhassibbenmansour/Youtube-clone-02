@@ -85,9 +85,17 @@ header .right .gauche .lisser input::placeholder {
 }
 
 header .right .gauche .lisser input:focus {
+    width: 630px; 
     border-color: #ddd;
-    outline-color: #ddd;
+    outline-color: #143dc47c;
+    transition: width 0.3s ease;
 }
+
+header:has(.right .gauche .lisser input:focus) {
+    gap: 8.3rem;
+    transition: gap 0.3s ease; 
+}
+
 
 header .right .gauche .lisser div:last-of-type {
     width: 60px;
